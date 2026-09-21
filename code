@@ -1,1 +1,39 @@
+public class ConsolaRetro{
+    String modelo;
+    String numeroSerie;
+    boolean encendida;
 
+    public ConsolaRetro(String modelo, String numeroSerie) {
+        this.modelo = modelo;
+        this.numeroSerie = numeroSerie;
+    }
+
+    public void encender(){
+        encendida = true;
+        System.out.println("La consola se encuentra encendida");
+    }
+
+    public void apagar(){
+        encendida = false;
+        System.out.println("La consola se encuentra apagada");
+    }
+
+    public void mostrarEstado(){
+        if (encendida){
+            System.out.println("La consola esta encendida");
+        }else{
+            System.out.println("La consola esta apagada");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args){
+        ConsolaRetro c1 = new ConsolaRetro("PSP", "PSP-1000");
+            c1.mostrarEstado();
+            c1.encender();
+            c1.mostrarEstado();
+            c1.apagar();
+            c1.mostrarEstado();
+    }
+}
