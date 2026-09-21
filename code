@@ -10,19 +10,19 @@ public class ConsolaRetro{
 
     public void encender(){
         encendida = true;
-        System.out.println("La consola se encuentra encendida");
+        System.out.println("La " + modelo + " se encuentra encendida");
     }
 
     public void apagar(){
         encendida = false;
-        System.out.println("La consola se encuentra apagada");
+        System.out.println("La " + modelo + " se encuentra apagada");
     }
 
     public void mostrarEstado(){
         if (encendida){
-            System.out.println("La consola esta encendida");
-        }else{
-            System.out.println("La consola esta apagada");
+            System.out.println("La " + modelo + " esta encendida");
+        } else {
+            System.out.println("La " + modelo + " esta apagada");
         }
     }
 }
