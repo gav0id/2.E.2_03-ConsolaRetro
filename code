@@ -27,6 +27,8 @@ public class ConsolaRetro{
     }
 }
 
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 public class Main {
     public static void main(String[] args){
         ConsolaRetro c1 = new ConsolaRetro("PSP", "PSP-1000");
